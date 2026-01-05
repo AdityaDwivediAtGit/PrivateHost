@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/offline/qr-scanner/qr-scanner.page.ts"],
+  "sourcesContent": ["\n    :host {\n      display: block;\n      height: 100%;\n    }\n    zxing-scanner {\n      height: 100vh;\n      width: 100%;\n      object-fit: cover;\n    }\n    .scan-overlay {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      border: 50px solid rgba(0,0,0,0.5);\n      border-top-width: 150px;\n      border-bottom-width: 150px;\n      pointer-events: none;\n    }\n    .scan-result {\n      position: absolute;\n      bottom: 20px;\n      left: 20px;\n      right: 20px;\n      background: white;\n      padding: 20px;\n      border-radius: 12px;\n      box-shadow: 0 4px 12px rgba(0,0,0,0.2);\n    }\n  "],
+  "mappings": ";AACI;AACE,WAAA;AACA,UAAA;;AAEF;AACE,UAAA;AACA,SAAA;AACA,cAAA;;AAEF,CAAA;AACE,YAAA;AACA,OAAA;AACA,QAAA;AACA,SAAA;AACA,UAAA;AACA,UAAA,KAAA,MAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;AACA,oBAAA;AACA,uBAAA;AACA,kBAAA;;AAEF,CAAA;AACE,YAAA;AACA,UAAA;AACA,QAAA;AACA,SAAA;AACA,cAAA;AACA,WAAA;AACA,iBAAA;AACA,cAAA,EAAA,IAAA,KAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;;",
+  "names": []
+}

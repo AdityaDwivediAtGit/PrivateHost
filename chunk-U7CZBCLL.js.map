@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/store/temple/temple.selectors.ts"],
+  "sourcesContent": ["import { createSelector, createFeatureSelector } from '@ngrx/store';\nimport { TempleState } from './temple.reducer';\n\nexport const selectTempleState = createFeatureSelector<TempleState>('temple');\n\nexport const selectAllTemples = createSelector(\n    selectTempleState,\n    (state: TempleState) => state.temples\n);\n\nexport const selectTempleLoading = createSelector(\n    selectTempleState,\n    (state: TempleState) => state.loading\n);\n"],
+  "mappings": ";;;;;;AAGO,IAAM,oBAAoB,sBAAmC,QAAQ;AAErE,IAAM,mBAAmB,eAC5B,mBACA,CAAC,UAAuB,MAAM,OAAO;AAGlC,IAAM,sBAAsB,eAC/B,mBACA,CAAC,UAAuB,MAAM,OAAO;",
+  "names": []
+}

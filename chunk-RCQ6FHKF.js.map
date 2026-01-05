@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/store/temple/temple.actions.ts"],
+  "sourcesContent": ["import { createAction, props } from '@ngrx/store';\nimport { Temple } from '../../core/models/temple.model';\n\nexport const loadTemples = createAction('[Temple List] Load Temples');\nexport const loadTemplesSuccess = createAction(\n    '[Temple List] Load Temples Success',\n    props<{ temples: Temple[] }>()\n);\nexport const loadTemplesFailure = createAction(\n    '[Temple List] Load Temples Failure',\n    props<{ error: any }>()\n);\n"],
+  "mappings": ";;;;;;AAGO,IAAM,cAAc,aAAa,4BAA4B;AAC7D,IAAM,qBAAqB,aAC9B,sCACA,MAAK,CAAyB;AAE3B,IAAM,qBAAqB,aAC9B,sCACA,MAAK,CAAkB;",
+  "names": []
+}
