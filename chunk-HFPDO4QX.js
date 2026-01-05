@@ -1,0 +1,1 @@
+import{b as e,c as o}from"./chunk-KGWUDX6N.js";var s=e("[Temple List] Load Temples"),l=e("[Temple List] Load Temples Success",o()),m=e("[Temple List] Load Temples Failure",o());export{s as a,l as b,m as c};
