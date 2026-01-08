@@ -4746,6 +4746,7 @@ export {
   FormGroupDirective,
   MaxValidator,
   MinValidator,
+  MaxLengthValidator,
   FormBuilder,
   FormsModule,
   ReactiveFormsModule
@@ -4759,4 +4760,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-4GSJKEH6.js.map
+//# sourceMappingURL=chunk-AS2LDNZD.js.map

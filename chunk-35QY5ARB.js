@@ -58,6 +58,8 @@ import {
   ɵɵdefineNgModule,
   ɵɵelement,
   ɵɵelementContainer,
+  ɵɵelementContainerEnd,
+  ɵɵelementContainerStart,
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵloadQuery,
@@ -345,38 +347,68 @@ var MatProgressSpinnerModule = class _MatProgressSpinnerModule {
 var _c02 = (a0) => ["/temples", a0];
 var _c1 = () => ["/book"];
 var _c2 = (a0) => ({ templeId: a0 });
+function TempleCardComponent_ng_container_16_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275elementStart(1, "button", 9);
+    \u0275\u0275text(2, "DETAILS");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "button", 10);
+    \u0275\u0275text(4, "BOOK NOW");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r0 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("routerLink", \u0275\u0275pureFunction1(3, _c02, ctx_r0.temple.id));
+    \u0275\u0275advance(2);
+    \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(5, _c1))("queryParams", \u0275\u0275pureFunction1(6, _c2, ctx_r0.temple.id));
+  }
+}
+function TempleCardComponent_ng_template_17_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "button", 11);
+    \u0275\u0275text(1, "DETAILS");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(2, "button", 12);
+    \u0275\u0275text(3, "COMING SOON");
+    \u0275\u0275elementEnd();
+  }
+}
 var TempleCardComponent = class _TempleCardComponent {
   temple;
+  get isAvailable() {
+    return this.temple.id === "KATRA";
+  }
   static \u0275fac = function TempleCardComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _TempleCardComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TempleCardComponent, selectors: [["app-temple-card"]], inputs: { temple: "temple" }, decls: 20, vars: 15, consts: [[1, "h-full", "temple-card", "hover:shadow-lg", "transition-shadow", "duration-300"], ["mat-card-image", "", 1, "h-48", "object-cover", 3, "src", "alt"], [1, "line-clamp-3", "mt-2", "text-gray-600"], [1, "flex", "items-center", "mt-2"], [1, "text-yellow-500", "text-sm"], [1, "ml-1", "text-sm", "font-medium"], ["align", "end"], ["mat-button", "", "color", "primary", 3, "routerLink"], ["mat-raised-button", "", "color", "accent", 3, "routerLink", "queryParams"]], template: function TempleCardComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _TempleCardComponent, selectors: [["app-temple-card"]], inputs: { temple: "temple" }, decls: 19, vars: 9, consts: [["comingSoon", ""], [1, "h-full", "temple-card", "hover:shadow-lg", "transition-shadow", "duration-300"], ["mat-card-image", "", 1, "h-48", "object-cover", 3, "src", "alt"], [1, "line-clamp-3", "mt-2", "text-gray-600"], [1, "flex", "items-center", "mt-2"], [1, "text-yellow-500", "text-sm"], [1, "ml-1", "text-sm", "font-medium"], ["align", "end"], [4, "ngIf", "ngIfElse"], ["mat-button", "", "color", "primary", 3, "routerLink"], ["mat-raised-button", "", "color", "accent", 3, "routerLink", "queryParams"], ["mat-button", "", "disabled", ""], ["mat-raised-button", "", "disabled", ""]], template: function TempleCardComponent_Template(rf, ctx) {
     if (rf & 1) {
-      \u0275\u0275elementStart(0, "mat-card", 0);
-      \u0275\u0275element(1, "img", 1);
+      \u0275\u0275elementStart(0, "mat-card", 1);
+      \u0275\u0275element(1, "img", 2);
       \u0275\u0275elementStart(2, "mat-card-header")(3, "mat-card-title");
       \u0275\u0275text(4);
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(5, "mat-card-subtitle");
       \u0275\u0275text(6);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(7, "mat-card-content")(8, "p", 2);
+      \u0275\u0275elementStart(7, "mat-card-content")(8, "p", 3);
       \u0275\u0275text(9);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(10, "div", 3)(11, "mat-icon", 4);
+      \u0275\u0275elementStart(10, "div", 4)(11, "mat-icon", 5);
       \u0275\u0275text(12, "star");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(13, "span", 5);
+      \u0275\u0275elementStart(13, "span", 6);
       \u0275\u0275text(14);
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(15, "mat-card-actions", 6)(16, "button", 7);
-      \u0275\u0275text(17, "DETAILS");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(18, "button", 8);
-      \u0275\u0275text(19, "BOOK NOW");
-      \u0275\u0275elementEnd()()();
+      \u0275\u0275elementStart(15, "mat-card-actions", 7);
+      \u0275\u0275template(16, TempleCardComponent_ng_container_16_Template, 5, 8, "ng-container", 8)(17, TempleCardComponent_ng_template_17_Template, 4, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+      \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
+      const comingSoon_r2 = \u0275\u0275reference(18);
       \u0275\u0275advance();
       \u0275\u0275property("src", ctx.temple.imageUrl || "assets/placeholder-temple.jpg", \u0275\u0275sanitizeUrl)("alt", ctx.temple.name);
       \u0275\u0275advance(3);
@@ -388,11 +420,9 @@ var TempleCardComponent = class _TempleCardComponent {
       \u0275\u0275advance(5);
       \u0275\u0275textInterpolate(ctx.temple.rating);
       \u0275\u0275advance(2);
-      \u0275\u0275property("routerLink", \u0275\u0275pureFunction1(10, _c02, ctx.temple.id));
-      \u0275\u0275advance(2);
-      \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(12, _c1))("queryParams", \u0275\u0275pureFunction1(13, _c2, ctx.temple.id));
+      \u0275\u0275property("ngIf", ctx.isAvailable)("ngIfElse", comingSoon_r2);
     }
-  }, dependencies: [CommonModule, MatCardModule, MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardImage, MatCardSubtitle, MatCardTitle, MatButtonModule, MatButton, MatIconModule, MatIcon, RouterLink], encapsulation: 2 });
+  }, dependencies: [CommonModule, NgIf, MatCardModule, MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardImage, MatCardSubtitle, MatCardTitle, MatButtonModule, MatButton, MatIconModule, MatIcon, RouterLink], encapsulation: 2 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TempleCardComponent, [{
@@ -414,9 +444,16 @@ var TempleCardComponent = class _TempleCardComponent {
         </div>
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-button color="primary" [routerLink]="['/temples', temple.id]">DETAILS</button>
-        <button mat-raised-button color="accent" [routerLink]="['/book']" [queryParams]="{ templeId: temple.id }">BOOK
-            NOW</button>
+        <ng-container *ngIf="isAvailable; else comingSoon">
+            <button mat-button color="primary" [routerLink]="['/temples', temple.id]">DETAILS</button>
+            <button mat-raised-button color="accent" [routerLink]="['/book']"
+                [queryParams]="{ templeId: temple.id }">BOOK
+                NOW</button>
+        </ng-container>
+        <ng-template #comingSoon>
+            <button mat-button disabled>DETAILS</button>
+            <button mat-raised-button disabled>COMING SOON</button>
+        </ng-template>
     </mat-card-actions>
 </mat-card>` }]
   }], null, { temple: [{
@@ -512,4 +549,4 @@ var templeRoutes = [
 export {
   templeRoutes
 };
-//# sourceMappingURL=chunk-3K6INPJ6.js.map
+//# sourceMappingURL=chunk-35QY5ARB.js.map

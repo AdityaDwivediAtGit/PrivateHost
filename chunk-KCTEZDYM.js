@@ -4,7 +4,7 @@ import {
 import {
   ApiService,
   createBooking
-} from "./chunk-HOUR5Z6B.js";
+} from "./chunk-S7UZ6KIH.js";
 import {
   ControlContainer,
   DefaultValueAccessor,
@@ -14,6 +14,7 @@ import {
   FormControlName,
   FormGroupDirective,
   FormGroupName,
+  MaxLengthValidator,
   NG_VALIDATORS,
   NG_VALUE_ACCESSOR,
   NgControl,
@@ -24,7 +25,7 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgNoValidate
-} from "./chunk-4GSJKEH6.js";
+} from "./chunk-AS2LDNZD.js";
 import {
   A,
   A11yModule,
@@ -18666,6 +18667,48 @@ var StepFacilitiesComponent = class _StepFacilitiesComponent {
 })();
 
 // src/app/features/booking/step-pilgrims/step-pilgrims.ts
+function StepPilgrimsComponent_div_2_mat_error_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Required");
+    \u0275\u0275elementEnd();
+  }
+}
+function StepPilgrimsComponent_div_2_mat_error_10_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Required");
+    \u0275\u0275elementEnd();
+  }
+}
+function StepPilgrimsComponent_div_2_mat_error_11_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Invalid");
+    \u0275\u0275elementEnd();
+  }
+}
+function StepPilgrimsComponent_div_2_mat_error_22_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Required");
+    \u0275\u0275elementEnd();
+  }
+}
+function StepPilgrimsComponent_div_2_mat_error_27_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Required");
+    \u0275\u0275elementEnd();
+  }
+}
+function StepPilgrimsComponent_div_2_mat_error_28_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "mat-error");
+    \u0275\u0275text(1, "Invalid Adhaar");
+    \u0275\u0275elementEnd();
+  }
+}
 function StepPilgrimsComponent_div_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
@@ -18673,37 +18716,66 @@ function StepPilgrimsComponent_div_2_Template(rf, ctx) {
     \u0275\u0275text(3, "Name");
     \u0275\u0275elementEnd();
     \u0275\u0275element(4, "input", 6);
+    \u0275\u0275template(5, StepPilgrimsComponent_div_2_mat_error_5_Template, 2, 0, "mat-error", 7);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "mat-form-field", 7)(6, "mat-label");
-    \u0275\u0275text(7, "Age");
+    \u0275\u0275elementStart(6, "mat-form-field", 8)(7, "mat-label");
+    \u0275\u0275text(8, "Age");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(8, "input", 8);
+    \u0275\u0275element(9, "input", 9);
+    \u0275\u0275template(10, StepPilgrimsComponent_div_2_mat_error_10_Template, 2, 0, "mat-error", 7)(11, StepPilgrimsComponent_div_2_mat_error_11_Template, 2, 0, "mat-error", 7);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "mat-form-field", 9)(10, "mat-label");
-    \u0275\u0275text(11, "Gender");
+    \u0275\u0275elementStart(12, "mat-form-field", 10)(13, "mat-label");
+    \u0275\u0275text(14, "Gender");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "mat-select", 10)(13, "mat-option", 11);
-    \u0275\u0275text(14, "Male");
+    \u0275\u0275elementStart(15, "mat-select", 11)(16, "mat-option", 12);
+    \u0275\u0275text(17, "Male");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(15, "mat-option", 12);
-    \u0275\u0275text(16, "Female");
+    \u0275\u0275elementStart(18, "mat-option", 13);
+    \u0275\u0275text(19, "Female");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(17, "mat-option", 13);
-    \u0275\u0275text(18, "Other");
-    \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(19, "button", 14);
-    \u0275\u0275listener("click", function StepPilgrimsComponent_div_2_Template_button_click_19_listener() {
+    \u0275\u0275elementStart(20, "mat-option", 14);
+    \u0275\u0275text(21, "Other");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275template(22, StepPilgrimsComponent_div_2_mat_error_22_Template, 2, 0, "mat-error", 7);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(23, "mat-form-field", 15)(24, "mat-label");
+    \u0275\u0275text(25, "Adhaar Number");
+    \u0275\u0275elementEnd();
+    \u0275\u0275element(26, "input", 16);
+    \u0275\u0275template(27, StepPilgrimsComponent_div_2_mat_error_27_Template, 2, 0, "mat-error", 7)(28, StepPilgrimsComponent_div_2_mat_error_28_Template, 2, 0, "mat-error", 7);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(29, "button", 17);
+    \u0275\u0275listener("click", function StepPilgrimsComponent_div_2_Template_button_click_29_listener() {
       const i_r2 = \u0275\u0275restoreView(_r1).index;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.removePilgrim(i_r2));
     });
-    \u0275\u0275elementStart(20, "mat-icon");
-    \u0275\u0275text(21, "delete");
+    \u0275\u0275elementStart(30, "mat-icon");
+    \u0275\u0275text(31, "delete");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
+    let tmp_4_0;
+    let tmp_5_0;
+    let tmp_6_0;
+    let tmp_7_0;
+    let tmp_8_0;
+    let tmp_9_0;
+    const pilgrim_r4 = ctx.$implicit;
     const i_r2 = ctx.index;
     \u0275\u0275property("formGroupName", i_r2);
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", (tmp_4_0 = pilgrim_r4.get("name")) == null ? null : tmp_4_0.hasError("required"));
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", (tmp_5_0 = pilgrim_r4.get("age")) == null ? null : tmp_5_0.hasError("required"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_6_0 = pilgrim_r4.get("age")) == null ? null : tmp_6_0.hasError("min"));
+    \u0275\u0275advance(11);
+    \u0275\u0275property("ngIf", (tmp_7_0 = pilgrim_r4.get("gender")) == null ? null : tmp_7_0.hasError("required"));
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", (tmp_8_0 = pilgrim_r4.get("adhaar")) == null ? null : tmp_8_0.hasError("required"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_9_0 = pilgrim_r4.get("adhaar")) == null ? null : tmp_9_0.hasError("pattern"));
   }
 }
 var StepPilgrimsComponent = class _StepPilgrimsComponent {
@@ -18717,7 +18789,8 @@ var StepPilgrimsComponent = class _StepPilgrimsComponent {
       id: [crypto.randomUUID()],
       name: ["", Validators.required],
       age: ["", [Validators.required, Validators.min(1)]],
-      gender: ["", Validators.required]
+      gender: ["", Validators.required],
+      adhaar: ["", [Validators.required, Validators.pattern(/^\d{12}$/)]]
     }));
   }
   removePilgrim(index) {
@@ -18726,10 +18799,10 @@ var StepPilgrimsComponent = class _StepPilgrimsComponent {
   static \u0275fac = function StepPilgrimsComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _StepPilgrimsComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _StepPilgrimsComponent, selectors: [["app-step-pilgrims"]], inputs: { formGroup: "formGroup" }, decls: 7, vars: 2, consts: [[1, "p-4", 3, "formGroup"], ["formArrayName", "pilgrims"], ["class", "flex gap-4 items-center mb-4 border p-4 rounded bg-gray-50", 3, "formGroupName", 4, "ngFor", "ngForOf"], ["mat-stroked-button", "", "color", "primary", 3, "click"], [1, "flex", "gap-4", "items-center", "mb-4", "border", "p-4", "rounded", "bg-gray-50", 3, "formGroupName"], ["appearance", "outline", 1, "w-full"], ["matInput", "", "formControlName", "name"], ["appearance", "outline", 1, "w-24"], ["matInput", "", "type", "number", "formControlName", "age"], ["appearance", "outline", 1, "w-32"], ["formControlName", "gender"], ["value", "male"], ["value", "female"], ["value", "other"], ["mat-icon-button", "", "color", "warn", 3, "click"]], template: function StepPilgrimsComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _StepPilgrimsComponent, selectors: [["app-step-pilgrims"]], inputs: { formGroup: "formGroup" }, decls: 7, vars: 2, consts: [[1, "p-4", 3, "formGroup"], ["formArrayName", "pilgrims"], ["class", "flex gap-4 items-center mb-4 border p-4 rounded bg-gray-50", 3, "formGroupName", 4, "ngFor", "ngForOf"], ["mat-stroked-button", "", "color", "primary", 3, "click"], [1, "flex", "gap-4", "items-center", "mb-4", "border", "p-4", "rounded", "bg-gray-50", 3, "formGroupName"], ["appearance", "outline", 1, "w-full"], ["matInput", "", "formControlName", "name"], [4, "ngIf"], ["appearance", "outline", 1, "w-24"], ["matInput", "", "type", "number", "formControlName", "age"], ["appearance", "outline", 1, "w-32"], ["formControlName", "gender"], ["value", "male"], ["value", "female"], ["value", "other"], ["appearance", "outline", 1, "w-48"], ["matInput", "", "formControlName", "adhaar", "maxlength", "12", "placeholder", "12-digit number"], ["mat-icon-button", "", "color", "warn", 3, "click"]], template: function StepPilgrimsComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "form", 0)(1, "div", 1);
-      \u0275\u0275template(2, StepPilgrimsComponent_div_2_Template, 22, 1, "div", 2);
+      \u0275\u0275template(2, StepPilgrimsComponent_div_2_Template, 32, 7, "div", 2);
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(3, "button", 3);
       \u0275\u0275listener("click", function StepPilgrimsComponent_Template_button_click_3_listener() {
@@ -18746,12 +18819,50 @@ var StepPilgrimsComponent = class _StepPilgrimsComponent {
       \u0275\u0275advance(2);
       \u0275\u0275property("ngForOf", ctx.pilgrims.controls);
     }
-  }, dependencies: [CommonModule, NgForOf, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, NgControlStatusGroup, FormGroupDirective, FormControlName, FormGroupName, FormArrayName, MatFormFieldModule, MatFormField, MatLabel, MatInputModule, MatInput, MatButtonModule, MatButton, MatIconButton, MatIconModule, MatIcon, MatSelectModule, MatSelect, MatOption], encapsulation: 2 });
+  }, dependencies: [CommonModule, NgForOf, NgIf, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, FormGroupName, FormArrayName, MatFormFieldModule, MatFormField, MatLabel, MatError, MatInputModule, MatInput, MatButtonModule, MatButton, MatIconButton, MatIconModule, MatIcon, MatSelectModule, MatSelect, MatOption], encapsulation: 2 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(StepPilgrimsComponent, [{
     type: Component,
-    args: [{ selector: "app-step-pilgrims", standalone: true, imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, MatSelectModule], template: '<form [formGroup]="formGroup" class="p-4">\n    <div formArrayName="pilgrims">\n        <div *ngFor="let pilgrim of pilgrims.controls; let i = index" [formGroupName]="i"\n            class="flex gap-4 items-center mb-4 border p-4 rounded bg-gray-50">\n            <mat-form-field appearance="outline" class="w-full">\n                <mat-label>Name</mat-label>\n                <input matInput formControlName="name">\n            </mat-form-field>\n            <mat-form-field appearance="outline" class="w-24">\n                <mat-label>Age</mat-label>\n                <input matInput type="number" formControlName="age">\n            </mat-form-field>\n            <mat-form-field appearance="outline" class="w-32">\n                <mat-label>Gender</mat-label>\n                <mat-select formControlName="gender">\n                    <mat-option value="male">Male</mat-option>\n                    <mat-option value="female">Female</mat-option>\n                    <mat-option value="other">Other</mat-option>\n                </mat-select>\n            </mat-form-field>\n            <button mat-icon-button color="warn" (click)="removePilgrim(i)">\n                <mat-icon>delete</mat-icon>\n            </button>\n        </div>\n    </div>\n    <button mat-stroked-button color="primary" (click)="addPilgrim()">\n        <mat-icon>add</mat-icon> Add Pilgrim\n    </button>\n</form>' }]
+    args: [{ selector: "app-step-pilgrims", standalone: true, imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, MatSelectModule], template: `<form [formGroup]="formGroup" class="p-4">
+    <div formArrayName="pilgrims">
+        <div *ngFor="let pilgrim of pilgrims.controls; let i = index" [formGroupName]="i"
+            class="flex gap-4 items-center mb-4 border p-4 rounded bg-gray-50">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+                <mat-error *ngIf="pilgrim.get('name')?.hasError('required')">Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-24">
+                <mat-label>Age</mat-label>
+                <input matInput type="number" formControlName="age">
+                <mat-error *ngIf="pilgrim.get('age')?.hasError('required')">Required</mat-error>
+                <mat-error *ngIf="pilgrim.get('age')?.hasError('min')">Invalid</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-32">
+                <mat-label>Gender</mat-label>
+                <mat-select formControlName="gender">
+                    <mat-option value="male">Male</mat-option>
+                    <mat-option value="female">Female</mat-option>
+                    <mat-option value="other">Other</mat-option>
+                </mat-select>
+                <mat-error *ngIf="pilgrim.get('gender')?.hasError('required')">Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-48">
+                <mat-label>Adhaar Number</mat-label>
+                <input matInput formControlName="adhaar" maxlength="12" placeholder="12-digit number">
+                <mat-error *ngIf="pilgrim.get('adhaar')?.hasError('required')">Required</mat-error>
+                <mat-error *ngIf="pilgrim.get('adhaar')?.hasError('pattern')">Invalid Adhaar</mat-error>
+            </mat-form-field>
+            <button mat-icon-button color="warn" (click)="removePilgrim(i)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </div>
+    <button mat-stroked-button color="primary" (click)="addPilgrim()">
+        <mat-icon>add</mat-icon> Add Pilgrim
+    </button>
+</form>` }]
   }], null, { formGroup: [{
     type: Input,
     args: [{ required: true }]
@@ -19014,4 +19125,4 @@ var bookingRoutes = [
 export {
   bookingRoutes
 };
-//# sourceMappingURL=chunk-PZHH7Q2X.js.map
+//# sourceMappingURL=chunk-KCTEZDYM.js.map

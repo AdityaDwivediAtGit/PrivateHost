@@ -55,7 +55,7 @@ import {
   setIonicClasses,
   setOverlayId,
   toastController
-} from "./chunk-KNJMO2Q2.js";
+} from "./chunk-DBYQOOJN.js";
 import {
   isRTL
 } from "./chunk-7GPIVXJN.js";
@@ -99,10 +99,10 @@ import {
   createBookingSuccess,
   resetBookingDraft,
   updateBookingDraft
-} from "./chunk-HOUR5Z6B.js";
+} from "./chunk-S7UZ6KIH.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-4GSJKEH6.js";
+} from "./chunk-AS2LDNZD.js";
 import {
   ESCAPE,
   FocusMonitor,
@@ -1960,11 +1960,11 @@ var UserEffects = class _UserEffects {
 var routes = [
   {
     path: "temples",
-    loadChildren: () => import("./chunk-3K6INPJ6.js").then((m) => m.templeRoutes)
+    loadChildren: () => import("./chunk-35QY5ARB.js").then((m) => m.templeRoutes)
   },
   {
     path: "book",
-    loadChildren: () => import("./chunk-PZHH7Q2X.js").then((m) => m.bookingRoutes)
+    loadChildren: () => import("./chunk-KCTEZDYM.js").then((m) => m.bookingRoutes)
   },
   {
     path: "planner",
@@ -1976,7 +1976,7 @@ var routes = [
   },
   {
     path: "offline",
-    loadChildren: () => import("./chunk-MY64KWY7.js").then((m) => m.offlineRoutes)
+    loadChildren: () => import("./chunk-TEAVYCDT.js").then((m) => m.offlineRoutes)
   },
   {
     path: "",

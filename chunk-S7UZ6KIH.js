@@ -38,7 +38,7 @@ var MOCK_DB = {
     {
       "id": "KATRA",
       "name": "Vaishno Devi",
-      "defaultDuration": 5,
+      "defaultDuration": 2,
       "deity": "Mata Vaishno Devi (Goddess Durga)",
       "region": "Jammu & Kashmir",
       "imageUrl": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
@@ -251,4 +251,4 @@ export {
   resetBookingDraft,
   ApiService
 };
-//# sourceMappingURL=chunk-HOUR5Z6B.js.map
+//# sourceMappingURL=chunk-S7UZ6KIH.js.map
