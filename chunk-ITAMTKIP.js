@@ -3640,7 +3640,175 @@ var MatButtonModule = class _MatButtonModule {
   }], null, null);
 })();
 
+// src/app/core/data/mock-db.ts
+var TEMPLE_IDS = {
+  VAISHNO_DEVI: "1",
+  KEDARNATH: "2",
+  TIRUPATI_BALAJI: "3",
+  GOLDEN_TEMPLE: "4",
+  SOMNATH: "5",
+  MEENAKSHI: "6",
+  JAGANNATH: "7",
+  BADRINATH: "8"
+};
+var MOCK_DB = {
+  temples: [
+    {
+      "id": TEMPLE_IDS.VAISHNO_DEVI,
+      "name": "DEMO Vaishno Devi",
+      "defaultDuration": 2,
+      "deity": "Mata Vaishno Devi (Goddess Durga)",
+      "region": "Jammu & Kashmir",
+      "imageUrl": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
+      "rating": 4.9,
+      "description": "One of the holiest Hindu temples dedicated to Goddess Vaishno Devi, located in the Trikuta Mountains.",
+      "distance": "13 km trek from Katra",
+      "bestTimeToVisit": "March to October",
+      "facilities": [
+        "accommodation",
+        "transport",
+        "prasad",
+        "medical"
+      ],
+      "timings": "Open 24 hours",
+      "entryFee": "Free"
+    },
+    {
+      "id": TEMPLE_IDS.KEDARNATH,
+      "name": "DEMO Kedarnath",
+      "deity": "Lord Shiva",
+      "region": "Uttarakhand",
+      "imageUrl": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
+      "rating": 4.8,
+      "description": "One of the twelve Jyotirlingas dedicated to Lord Shiva, located in the Himalayas.",
+      "distance": "16 km trek from Gaurikund",
+      "bestTimeToVisit": "May to June, September to October",
+      "facilities": [
+        "accommodation",
+        "medical",
+        "prasad"
+      ],
+      "timings": "6:00 AM - 7:00 PM",
+      "entryFee": "Free"
+    },
+    {
+      "id": TEMPLE_IDS.TIRUPATI_BALAJI,
+      "name": "DEMO Tirupati Balaji",
+      "deity": "Lord Venkateswara (Vishnu)",
+      "region": "Andhra Pradesh",
+      "imageUrl": "https://images.unsplash.com/photo-1582552938357-32b906d3c8c0?w=800&q=80",
+      "rating": 4.7,
+      "description": "Famous temple of Lord Venkateswara located on Tirumala hills, one of the richest temples in the world.",
+      "distance": "20 km from Tirupati city",
+      "bestTimeToVisit": "September to February",
+      "facilities": [
+        "accommodation",
+        "transport",
+        "prasad",
+        "medical",
+        "free-meals"
+      ],
+      "timings": "2:30 AM - 1:00 AM (Next day)",
+      "entryFee": "Free (Special Darshan tickets available)"
+    },
+    {
+      "id": TEMPLE_IDS.GOLDEN_TEMPLE,
+      "name": "DEMO Golden Temple (Harmandir Sahib)",
+      "deity": "Guru Granth Sahib",
+      "region": "Punjab",
+      "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
+      "rating": 4.9,
+      "description": "The holiest Gurdwara of Sikhism, known for its golden dome and serene sarovar.",
+      "distance": "In Amritsar city center",
+      "bestTimeToVisit": "October to March",
+      "facilities": [
+        "accommodation",
+        "free-meals",
+        "medical",
+        "prasad"
+      ],
+      "timings": "Open 24 hours",
+      "entryFee": "Free"
+    },
+    {
+      "id": TEMPLE_IDS.SOMNATH,
+      "name": "Somnath Temple",
+      "deity": "Lord Shiva",
+      "region": "Gujarat",
+      "imageUrl": "https://images.unsplash.com/photo-1582474958593-c2b1f1d8a4e0?w=800&q=80",
+      "rating": 4.6,
+      "description": "First among the twelve Jyotirlinga shrines of Shiva, located on the western coast of Gujarat.",
+      "distance": "Near Veraval, Gujarat",
+      "bestTimeToVisit": "October to March",
+      "facilities": [
+        "accommodation",
+        "prasad",
+        "medical"
+      ],
+      "timings": "6:00 AM - 9:30 PM",
+      "entryFee": "Free"
+    },
+    {
+      "id": TEMPLE_IDS.MEENAKSHI,
+      "name": "DEMO Meenakshi Temple",
+      "deity": "Goddess Meenakshi (Parvati) and Lord Sundareshwara (Shiva)",
+      "region": "Tamil Nadu",
+      "imageUrl": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&q=80",
+      "rating": 4.7,
+      "description": "Historic Hindu temple located in Madurai, dedicated to Meenakshi and her consort Sundareshwara.",
+      "distance": "In Madurai city center",
+      "bestTimeToVisit": "October to March",
+      "facilities": [
+        "prasad",
+        "transport"
+      ],
+      "timings": "5:00 AM - 12:30 PM, 4:00 PM - 9:30 PM",
+      "entryFee": "Free (Camera fee extra)"
+    },
+    {
+      "id": TEMPLE_IDS.JAGANNATH,
+      "name": "DEMO Jagannath Temple",
+      "deity": "Lord Jagannath (Krishna)",
+      "region": "Odisha",
+      "imageUrl": "https://images.unsplash.com/photo-1584464491033-06b41e95b4f6?w=800&q=80",
+      "rating": 4.5,
+      "description": "Famous for Rath Yatra festival, one of the Char Dham pilgrimage sites.",
+      "distance": "In Puri city",
+      "bestTimeToVisit": "October to February",
+      "facilities": [
+        "accommodation",
+        "prasad",
+        "transport"
+      ],
+      "timings": "5:00 AM - 12:00 AM",
+      "entryFee": "Free (Non-Hindus not allowed inside)"
+    },
+    {
+      "id": TEMPLE_IDS.BADRINATH,
+      "name": "DEMO Badrinath",
+      "deity": "Lord Vishnu",
+      "region": "Uttarakhand",
+      "imageUrl": "https://images.unsplash.com/photo-1605649194088-f758d3b5c4f1?w=800&q=80",
+      "rating": 4.8,
+      "description": "One of the Char Dham pilgrimage sites, dedicated to Lord Vishnu in the Himalayas.",
+      "distance": "301 km from Rishikesh",
+      "bestTimeToVisit": "May to June, September to October",
+      "facilities": [
+        "accommodation",
+        "medical",
+        "prasad",
+        "transport"
+      ],
+      "timings": "4:30 AM - 9:00 PM (Summer), 4:00 AM - 6:00 PM (Winter)",
+      "entryFee": "Free"
+    }
+  ],
+  bookings: []
+};
+
 export {
+  TEMPLE_IDS,
+  MOCK_DB,
   _getAnimationsState,
   _animationsDisabled,
   BACKSPACE,
@@ -3683,4 +3851,4 @@ export {
   MatButton,
   MatButtonModule
 };
-//# sourceMappingURL=chunk-6TJL7WE3.js.map
+//# sourceMappingURL=chunk-ITAMTKIP.js.map

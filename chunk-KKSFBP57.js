@@ -4,8 +4,9 @@ import {
 import {
   MatButton,
   MatButtonModule,
+  TEMPLE_IDS,
   _getAnimationsState
-} from "./chunk-6TJL7WE3.js";
+} from "./chunk-ITAMTKIP.js";
 import {
   selectAllTemples,
   selectTempleLoading
@@ -379,7 +380,7 @@ function TempleCardComponent_ng_template_17_Template(rf, ctx) {
 var TempleCardComponent = class _TempleCardComponent {
   temple;
   get isAvailable() {
-    return this.temple.id === "KATRA";
+    return this.temple.id === TEMPLE_IDS.VAISHNO_DEVI;
   }
   static \u0275fac = function TempleCardComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _TempleCardComponent)();
@@ -462,7 +463,7 @@ var TempleCardComponent = class _TempleCardComponent {
   }] });
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(TempleCardComponent, { className: "TempleCardComponent", filePath: "src/app/features/temple-discovery/temple-card/temple-card.ts", lineNumber: 16 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(TempleCardComponent, { className: "TempleCardComponent", filePath: "src/app/features/temple-discovery/temple-card/temple-card.ts", lineNumber: 17 });
 })();
 
 // src/app/features/temple-discovery/temple-list/temple-list.ts
@@ -549,4 +550,4 @@ var templeRoutes = [
 export {
   templeRoutes
 };
-//# sourceMappingURL=chunk-B3IL45P4.js.map
+//# sourceMappingURL=chunk-KKSFBP57.js.map
