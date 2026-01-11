@@ -5,11 +5,11 @@ import {
   coerceNumberProperty,
   getRtlScrollAxisType,
   supportsScrollBehavior
-} from "./chunk-RKW33Q7V.js";
+} from "./chunk-WBHH357P.js";
 import {
   BidiModule,
   Directionality
-} from "./chunk-HT3LVWIY.js";
+} from "./chunk-HOF3I4JI.js";
 import {
   ApplicationRef,
   ChangeDetectionStrategy,
@@ -76,7 +76,7 @@ import {
   ɵɵqueryRefresh,
   ɵɵstyleProp,
   ɵɵviewQuery
-} from "./chunk-2RES5WX4.js";
+} from "./chunk-RDNA5G2R.js";
 import {
   __spreadProps,
   __spreadValues
@@ -1418,4 +1418,4 @@ export {
   CdkScrollableModule,
   ScrollingModule
 };
-//# sourceMappingURL=chunk-KTM7UR5N.js.map
+//# sourceMappingURL=chunk-E5QNHDFV.js.map

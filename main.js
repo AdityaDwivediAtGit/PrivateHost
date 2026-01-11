@@ -55,7 +55,7 @@ import {
   setIonicClasses,
   setOverlayId,
   toastController
-} from "./chunk-DBYQOOJN.js";
+} from "./chunk-HSGJRLAY.js";
 import {
   isRTL
 } from "./chunk-7GPIVXJN.js";
@@ -91,18 +91,19 @@ import {
   RouterLinkActive,
   RouterOutlet,
   provideRouter
-} from "./chunk-D4PNRK26.js";
+} from "./chunk-ZY5QF7N4.js";
 import {
   ApiService,
+  NotificationService,
   createBooking,
   createBookingFailure,
   createBookingSuccess,
   resetBookingDraft,
   updateBookingDraft
-} from "./chunk-S7UZ6KIH.js";
+} from "./chunk-LSUPXJTK.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-AS2LDNZD.js";
+} from "./chunk-QG35UWXQ.js";
 import {
   ESCAPE,
   FocusMonitor,
@@ -114,18 +115,18 @@ import {
   _animationsDisabled,
   coerceBooleanProperty,
   hasModifierKey
-} from "./chunk-MAMGKEYU.js";
+} from "./chunk-6TJL7WE3.js";
 import {
   loadTemples,
   loadTemplesFailure,
   loadTemplesSuccess
-} from "./chunk-RCQ6FHKF.js";
+} from "./chunk-TB4IHAGP.js";
 import {
   CdkScrollable,
   CdkScrollableModule,
   ScrollDispatcher,
   ViewportRuler
-} from "./chunk-KTM7UR5N.js";
+} from "./chunk-E5QNHDFV.js";
 import {
   ActionsSubject,
   FEATURE_STATE_PROVIDER,
@@ -148,13 +149,13 @@ import {
   props,
   provideStore,
   toSignal
-} from "./chunk-RKW33Q7V.js";
+} from "./chunk-WBHH357P.js";
 import {
   BidiModule,
   Directionality,
   MatIcon,
   MatIconModule
-} from "./chunk-HT3LVWIY.js";
+} from "./chunk-HOF3I4JI.js";
 import {
   APP_INITIALIZER,
   Attribute,
@@ -178,8 +179,12 @@ import {
   Injector,
   Input,
   Location,
+  NgClass,
+  NgForOf,
   NgIf,
   NgModule,
+  NgSwitch,
+  NgSwitchCase,
   NgTemplateOutlet,
   NgZone,
   Observable,
@@ -251,6 +256,8 @@ import {
   ɵɵdomElementContainerStart,
   ɵɵelement,
   ɵɵelementContainer,
+  ɵɵelementContainerEnd,
+  ɵɵelementContainerStart,
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵgetCurrentView,
@@ -263,6 +270,7 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef,
   ɵɵproperty,
+  ɵɵpureFunction4,
   ɵɵqueryRefresh,
   ɵɵreference,
   ɵɵresetView,
@@ -270,8 +278,9 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵtext,
+  ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-2RES5WX4.js";
+} from "./chunk-RDNA5G2R.js";
 import "./chunk-EF3AQARZ.js";
 import "./chunk-DUXVAOZB.js";
 import {
@@ -1960,23 +1969,23 @@ var UserEffects = class _UserEffects {
 var routes = [
   {
     path: "temples",
-    loadChildren: () => import("./chunk-35QY5ARB.js").then((m) => m.templeRoutes)
+    loadChildren: () => import("./chunk-B3IL45P4.js").then((m) => m.templeRoutes)
   },
   {
     path: "book",
-    loadChildren: () => import("./chunk-KCTEZDYM.js").then((m) => m.bookingRoutes)
+    loadChildren: () => import("./chunk-SQRS2J5J.js").then((m) => m.bookingRoutes)
   },
   {
     path: "planner",
-    loadChildren: () => import("./chunk-YXZJTOE7.js").then((m) => m.itineraryRoutes)
+    loadChildren: () => import("./chunk-EDPFBHTO.js").then((m) => m.itineraryRoutes)
   },
   {
     path: "community",
-    loadChildren: () => import("./chunk-5JRUXPPV.js").then((m) => m.communityRoutes)
+    loadChildren: () => import("./chunk-ZCVL4E2U.js").then((m) => m.communityRoutes)
   },
   {
     path: "offline",
-    loadChildren: () => import("./chunk-TEAVYCDT.js").then((m) => m.offlineRoutes)
+    loadChildren: () => import("./chunk-VG4LDQ3K.js").then((m) => m.offlineRoutes)
   },
   {
     path: "",
@@ -34407,26 +34416,190 @@ var MainLayoutComponent = class _MainLayoutComponent {
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(MainLayoutComponent, { className: "MainLayoutComponent", filePath: "src/app/layout/main-layout/main-layout.ts", lineNumber: 16 });
 })();
 
+// src/app/shared/components/notification-banner/notification-banner.component.ts
+var _c04 = (a0, a1, a2, a3) => ({ "bg-red-500": a0, "bg-yellow-500": a1, "bg-blue-500": a2, "bg-green-500": a3 });
+function NotificationBannerComponent_div_2_ng_container_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275text(1, "error");
+    \u0275\u0275elementContainerEnd();
+  }
+}
+function NotificationBannerComponent_div_2_ng_container_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275text(1, "warning");
+    \u0275\u0275elementContainerEnd();
+  }
+}
+function NotificationBannerComponent_div_2_ng_container_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275text(1, "info");
+    \u0275\u0275elementContainerEnd();
+  }
+}
+function NotificationBannerComponent_div_2_ng_container_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275text(1, "check_circle");
+    \u0275\u0275elementContainerEnd();
+  }
+}
+function NotificationBannerComponent_div_2_div_8_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 11);
+    \u0275\u0275text(1);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const notification_r2 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275advance();
+    \u0275\u0275textInterpolate(notification_r2.title);
+  }
+}
+function NotificationBannerComponent_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 3)(1, "div", 4)(2, "mat-icon", 5);
+    \u0275\u0275template(3, NotificationBannerComponent_div_2_ng_container_3_Template, 2, 0, "ng-container", 6)(4, NotificationBannerComponent_div_2_ng_container_4_Template, 2, 0, "ng-container", 6)(5, NotificationBannerComponent_div_2_ng_container_5_Template, 2, 0, "ng-container", 6)(6, NotificationBannerComponent_div_2_ng_container_6_Template, 2, 0, "ng-container", 6);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(7, "div");
+    \u0275\u0275template(8, NotificationBannerComponent_div_2_div_8_Template, 2, 1, "div", 7);
+    \u0275\u0275elementStart(9, "div", 8);
+    \u0275\u0275text(10);
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(11, "button", 9);
+    \u0275\u0275listener("click", function NotificationBannerComponent_div_2_Template_button_click_11_listener() {
+      const notification_r2 = \u0275\u0275restoreView(_r1).$implicit;
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.removeNotification(notification_r2.id));
+    });
+    \u0275\u0275elementStart(12, "mat-icon", 10);
+    \u0275\u0275text(13, "close");
+    \u0275\u0275elementEnd()()();
+  }
+  if (rf & 2) {
+    const notification_r2 = ctx.$implicit;
+    \u0275\u0275property("ngClass", \u0275\u0275pureFunction4(8, _c04, notification_r2.type === "error", notification_r2.type === "warning", notification_r2.type === "info", notification_r2.type === "success"));
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngSwitch", notification_r2.type);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngSwitchCase", "error");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngSwitchCase", "warning");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngSwitchCase", "info");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngSwitchCase", "success");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", notification_r2.title);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(notification_r2.message);
+  }
+}
+var NotificationBannerComponent = class _NotificationBannerComponent {
+  notificationService;
+  notifications = [];
+  destroy$ = new Subject();
+  constructor(notificationService) {
+    this.notificationService = notificationService;
+  }
+  ngOnInit() {
+    this.notificationService.getNotifications().pipe(takeUntil(this.destroy$)).subscribe((notifications) => {
+      this.notifications = notifications;
+    });
+  }
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+  removeNotification(id) {
+    this.notificationService.removeNotification(id);
+  }
+  static \u0275fac = function NotificationBannerComponent_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _NotificationBannerComponent)(\u0275\u0275directiveInject(NotificationService));
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NotificationBannerComponent, selectors: [["app-notification-banner"]], decls: 3, vars: 1, consts: [[1, "fixed", "top-16", "left-0", "right-0", "z-40", "px-4", "py-2", "pointer-events-none"], [1, "max-w-4xl", "mx-auto", "space-y-2"], ["class", "flex items-center justify-between p-4 rounded-lg shadow-lg text-white pointer-events-auto animate-slideDown", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "flex", "items-center", "justify-between", "p-4", "rounded-lg", "shadow-lg", "text-white", "pointer-events-auto", "animate-slideDown", 3, "ngClass"], [1, "flex", "items-center", "gap-3"], [1, "text-xl", 3, "ngSwitch"], [4, "ngSwitchCase"], ["class", "font-bold", 4, "ngIf"], [1, "text-sm"], ["mat-icon-button", "", 1, "!text-white", "ml-2", 3, "click"], [1, "text-xl"], [1, "font-bold"]], template: function NotificationBannerComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      \u0275\u0275elementStart(0, "div", 0)(1, "div", 1);
+      \u0275\u0275template(2, NotificationBannerComponent_div_2_Template, 14, 13, "div", 2);
+      \u0275\u0275elementEnd()();
+    }
+    if (rf & 2) {
+      \u0275\u0275advance(2);
+      \u0275\u0275property("ngForOf", ctx.notifications);
+    }
+  }, dependencies: [CommonModule, NgClass, NgForOf, NgIf, NgSwitch, NgSwitchCase, MatIconModule, MatIcon, MatButtonModule, MatIconButton], styles: ["\n\n@keyframes _ngcontent-%COMP%_slideDown {\n  from {\n    transform: translateY(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n[_nghost-%COMP%]     .animate-slideDown {\n  animation: _ngcontent-%COMP%_slideDown 0.3s ease-out;\n}\n/*# sourceMappingURL=notification-banner.component.css.map */"] });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NotificationBannerComponent, [{
+    type: Component,
+    args: [{ selector: "app-notification-banner", standalone: true, imports: [CommonModule, MatIconModule, MatButtonModule], template: `
+        <div class="fixed top-16 left-0 right-0 z-40 px-4 py-2 pointer-events-none">
+            <div class="max-w-4xl mx-auto space-y-2">
+                <div 
+                    *ngFor="let notification of notifications"
+                    [ngClass]="{
+                        'bg-red-500': notification.type === 'error',
+                        'bg-yellow-500': notification.type === 'warning',
+                        'bg-blue-500': notification.type === 'info',
+                        'bg-green-500': notification.type === 'success'
+                    }"
+                    class="flex items-center justify-between p-4 rounded-lg shadow-lg text-white pointer-events-auto animate-slideDown"
+                >
+                    <div class="flex items-center gap-3">
+                        <mat-icon [ngSwitch]="notification.type" class="text-xl">
+                            <ng-container *ngSwitchCase="'error'">error</ng-container>
+                            <ng-container *ngSwitchCase="'warning'">warning</ng-container>
+                            <ng-container *ngSwitchCase="'info'">info</ng-container>
+                            <ng-container *ngSwitchCase="'success'">check_circle</ng-container>
+                        </mat-icon>
+                        <div>
+                            <div *ngIf="notification.title" class="font-bold">{{ notification.title }}</div>
+                            <div class="text-sm">{{ notification.message }}</div>
+                        </div>
+                    </div>
+                    <button 
+                        mat-icon-button 
+                        (click)="removeNotification(notification.id)"
+                        class="!text-white ml-2"
+                    >
+                        <mat-icon class="text-xl">close</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `, styles: ["/* angular:styles/component:scss;90ebe645d7007b1d918967ec30af2d7d745fe4c25c8c89006964afc8997db87f;/home/runner/work/Tirth-Yatra-Angular-Web/Tirth-Yatra-Angular-Web/dharm-yatra/src/app/shared/components/notification-banner/notification-banner.component.ts */\n@keyframes slideDown {\n  from {\n    transform: translateY(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n:host ::ng-deep .animate-slideDown {\n  animation: slideDown 0.3s ease-out;\n}\n/*# sourceMappingURL=notification-banner.component.css.map */\n"] }]
+  }], () => [{ type: NotificationService }], null);
+})();
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(NotificationBannerComponent, { className: "NotificationBannerComponent", filePath: "src/app/shared/components/notification-banner/notification-banner.component.ts", lineNumber: 66 });
+})();
+
 // src/app/app.ts
 var App3 = class _App {
   title = signal("dharm-yatra", ...ngDevMode ? [{ debugName: "title" }] : []);
   static \u0275fac = function App_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _App)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _App, selectors: [["app-root"]], decls: 1, vars: 0, template: function App_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _App, selectors: [["app-root"]], decls: 2, vars: 0, template: function App_Template(rf, ctx) {
     if (rf & 1) {
-      \u0275\u0275element(0, "app-main-layout");
+      \u0275\u0275element(0, "app-notification-banner")(1, "app-main-layout");
     }
-  }, dependencies: [MainLayoutComponent], encapsulation: 2 });
+  }, dependencies: [MainLayoutComponent, NotificationBannerComponent], encapsulation: 2 });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(App3, [{
     type: Component,
-    args: [{ selector: "app-root", standalone: true, imports: [MainLayoutComponent], template: "<app-main-layout></app-main-layout>" }]
+    args: [{ selector: "app-root", standalone: true, imports: [MainLayoutComponent, NotificationBannerComponent], template: `
+    <app-notification-banner></app-notification-banner>
+    <app-main-layout></app-main-layout>
+  ` }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App3, { className: "App", filePath: "src/app/app.ts", lineNumber: 11 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(App3, { className: "App", filePath: "src/app/app.ts", lineNumber: 15 });
 })();
 
 // src/main.ts

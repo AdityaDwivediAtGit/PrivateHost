@@ -1,7 +1,7 @@
 import {
   MatIcon,
   MatIconModule
-} from "./chunk-HT3LVWIY.js";
+} from "./chunk-HOF3I4JI.js";
 import {
   Component,
   setClassMetadata,
@@ -10,7 +10,7 @@ import {
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵtext
-} from "./chunk-2RES5WX4.js";
+} from "./chunk-RDNA5G2R.js";
 import "./chunk-ZZ4OR5I3.js";
 
 // src/app/features/user-community/community-page/community-page.ts
@@ -58,4 +58,4 @@ var communityRoutes = [
 export {
   communityRoutes
 };
-//# sourceMappingURL=chunk-5JRUXPPV.js.map
+//# sourceMappingURL=chunk-ZCVL4E2U.js.map

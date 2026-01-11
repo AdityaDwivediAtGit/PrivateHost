@@ -1,6 +1,6 @@
 import {
   BidiModule
-} from "./chunk-HT3LVWIY.js";
+} from "./chunk-HOF3I4JI.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -20,7 +20,7 @@ import {
   ɵɵdomElementStart,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-2RES5WX4.js";
+} from "./chunk-RDNA5G2R.js";
 
 // node_modules/@angular/material/fesm2022/card.mjs
 var _c0 = ["*"];
@@ -453,4 +453,4 @@ export {
   MatCardImage,
   MatCardModule
 };
-//# sourceMappingURL=chunk-JTHGGCP6.js.map
+//# sourceMappingURL=chunk-3ZJXNB5J.js.map

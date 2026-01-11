@@ -1,7 +1,7 @@
 import {
   createAction,
   props
-} from "./chunk-RKW33Q7V.js";
+} from "./chunk-WBHH357P.js";
 
 // src/app/store/temple/temple.actions.ts
 var loadTemples = createAction("[Temple List] Load Temples");
@@ -13,4 +13,4 @@ export {
   loadTemplesSuccess,
   loadTemplesFailure
 };
-//# sourceMappingURL=chunk-RCQ6FHKF.js.map
+//# sourceMappingURL=chunk-TB4IHAGP.js.map

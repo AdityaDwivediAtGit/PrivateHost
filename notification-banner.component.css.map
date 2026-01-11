@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/shared/components/notification-banner/notification-banner.component.ts"],
+  "sourcesContent": ["\n        @keyframes slideDown {\n            from {\n                transform: translateY(-100%);\n                opacity: 0;\n            }\n            to {\n                transform: translateY(0);\n                opacity: 1;\n            }\n        }\n\n        :host ::ng-deep .animate-slideDown {\n            animation: slideDown 0.3s ease-out;\n        }\n    "],
+  "mappings": ";AACQ,WAAA;AACI;AACI,eAAA,WAAA;AACA,aAAA;;AAEJ;AACI,eAAA,WAAA;AACA,aAAA;;;AAIR,MAAA,UAAA,CAAA;AACI,aAAA,UAAA,KAAA;;",
+  "names": []
+}
