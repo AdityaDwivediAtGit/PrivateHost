@@ -2779,6 +2779,9 @@ video {
 .hidden {
   display: none;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-12 {
   height: 3rem;
 }
@@ -2808,6 +2811,9 @@ video {
 }
 .w-1\/2 {
   width: 50%;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .w-12 {
   width: 3rem;
@@ -3006,6 +3012,9 @@ video {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+.object-contain {
+  object-fit: contain;
 }
 .object-cover {
   object-fit: cover;

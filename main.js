@@ -100,7 +100,7 @@ import {
   createBookingSuccess,
   resetBookingDraft,
   updateBookingDraft
-} from "./chunk-FDM7BF6X.js";
+} from "./chunk-M5WEUI4U.js";
 import {
   NG_VALUE_ACCESSOR
 } from "./chunk-QG35UWXQ.js";
@@ -115,7 +115,7 @@ import {
   _animationsDisabled,
   coerceBooleanProperty,
   hasModifierKey
-} from "./chunk-ITAMTKIP.js";
+} from "./chunk-GZLLNZZG.js";
 import {
   loadTemples,
   loadTemplesFailure,
@@ -1969,11 +1969,11 @@ var UserEffects = class _UserEffects {
 var routes = [
   {
     path: "temples",
-    loadChildren: () => import("./chunk-KKSFBP57.js").then((m) => m.templeRoutes)
+    loadChildren: () => import("./chunk-6OESHRNL.js").then((m) => m.templeRoutes)
   },
   {
     path: "book",
-    loadChildren: () => import("./chunk-RRUDQA7R.js").then((m) => m.bookingRoutes)
+    loadChildren: () => import("./chunk-RVGRN3RM.js").then((m) => m.bookingRoutes)
   },
   {
     path: "planner",
@@ -34346,62 +34346,64 @@ var MainLayoutComponent = class _MainLayoutComponent {
   static \u0275fac = function MainLayoutComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MainLayoutComponent)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _MainLayoutComponent, selectors: [["app-main-layout"]], decls: 33, vars: 0, consts: [["drawer", ""], [1, "flex", "flex-col", "min-h-screen"], ["color", "primary", 1, "!bg-indigo-900", "!text-white", "shadow-md", "z-50", "relative"], ["mat-icon-button", "", 1, "md:hidden", 3, "click"], [1, "font-bold", "text-xl", "tracking-tight", "ml-2"], [1, "flex-1"], [1, "hidden", "md:flex", "gap-2"], ["mat-button", "", "routerLink", "/temples", "routerLinkActive", "bg-white/10"], ["mat-button", "", "routerLink", "/planner", "routerLinkActive", "bg-white/10"], ["mat-button", "", "routerLink", "/community", "routerLinkActive", "bg-white/10"], ["mat-icon-button", "", 1, "ml-2"], ["autosize", "", 1, "flex-1"], ["mode", "over"], [1, "flex", "flex-col", "w-60", "p-4", "gap-2"], ["mat-button", "", "routerLink", "/temples", 3, "click"], ["mat-button", "", "routerLink", "/planner", 3, "click"], ["mat-button", "", "routerLink", "/community", 3, "click"], [1, "bg-gray-50", "flex", "flex-col"], [1, "bg-gray-800", "text-white", "p-6", "mt-auto"], [1, "container", "mx-auto", "text-center", "text-sm", "opacity-70"]], template: function MainLayoutComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _MainLayoutComponent, selectors: [["app-main-layout"]], decls: 35, vars: 0, consts: [["drawer", ""], [1, "flex", "flex-col", "min-h-screen"], ["color", "primary", 1, "!bg-indigo-900", "!text-white", "shadow-md", "z-50", "relative"], ["mat-icon-button", "", 1, "md:hidden", 3, "click"], [1, "flex", "items-center", "gap-3", "ml-2"], ["src", "logo-1.png", "alt", "Dharm Yatra Logo", 1, "h-10", "w-10", "object-contain"], [1, "font-bold", "text-xl", "tracking-tight"], [1, "flex-1"], [1, "hidden", "md:flex", "gap-2"], ["mat-button", "", "routerLink", "/temples", "routerLinkActive", "bg-white/10"], ["mat-button", "", "routerLink", "/planner", "routerLinkActive", "bg-white/10"], ["mat-button", "", "routerLink", "/community", "routerLinkActive", "bg-white/10"], ["mat-icon-button", "", 1, "ml-2"], ["autosize", "", 1, "flex-1"], ["mode", "over"], [1, "flex", "flex-col", "w-60", "p-4", "gap-2"], ["mat-button", "", "routerLink", "/temples", 3, "click"], ["mat-button", "", "routerLink", "/planner", 3, "click"], ["mat-button", "", "routerLink", "/community", 3, "click"], [1, "bg-gray-50", "flex", "flex-col"], [1, "bg-gray-800", "text-white", "p-6", "mt-auto"], [1, "container", "mx-auto", "text-center", "text-sm", "opacity-70"]], template: function MainLayoutComponent_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = \u0275\u0275getCurrentView();
       \u0275\u0275elementStart(0, "div", 1)(1, "mat-toolbar", 2)(2, "button", 3);
       \u0275\u0275listener("click", function MainLayoutComponent_Template_button_click_2_listener() {
         \u0275\u0275restoreView(_r1);
-        const drawer_r2 = \u0275\u0275reference(20);
+        const drawer_r2 = \u0275\u0275reference(22);
         return \u0275\u0275resetView(drawer_r2.toggle());
       });
       \u0275\u0275elementStart(3, "mat-icon");
       \u0275\u0275text(4, "menu");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(5, "span", 4);
-      \u0275\u0275text(6, "Dharm Yatra");
-      \u0275\u0275elementEnd();
-      \u0275\u0275element(7, "span", 5);
-      \u0275\u0275elementStart(8, "div", 6)(9, "button", 7);
-      \u0275\u0275text(10, "Temples");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(11, "button", 8);
-      \u0275\u0275text(12, "Planner");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(13, "button", 9);
-      \u0275\u0275text(14, "Community");
+      \u0275\u0275elementStart(5, "div", 4);
+      \u0275\u0275element(6, "img", 5);
+      \u0275\u0275elementStart(7, "span", 6);
+      \u0275\u0275text(8, "Dharm Yatra");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(15, "button", 10)(16, "mat-icon");
-      \u0275\u0275text(17, "account_circle");
-      \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(18, "mat-drawer-container", 11)(19, "mat-drawer", 12, 0)(21, "div", 13)(22, "button", 14);
-      \u0275\u0275listener("click", function MainLayoutComponent_Template_button_click_22_listener() {
-        \u0275\u0275restoreView(_r1);
-        const drawer_r2 = \u0275\u0275reference(20);
-        return \u0275\u0275resetView(drawer_r2.close());
-      });
-      \u0275\u0275text(23, "Temples");
+      \u0275\u0275element(9, "span", 7);
+      \u0275\u0275elementStart(10, "div", 8)(11, "button", 9);
+      \u0275\u0275text(12, "Temples");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(24, "button", 15);
+      \u0275\u0275elementStart(13, "button", 10);
+      \u0275\u0275text(14, "Planner");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(15, "button", 11);
+      \u0275\u0275text(16, "Community");
+      \u0275\u0275elementEnd()();
+      \u0275\u0275elementStart(17, "button", 12)(18, "mat-icon");
+      \u0275\u0275text(19, "account_circle");
+      \u0275\u0275elementEnd()()();
+      \u0275\u0275elementStart(20, "mat-drawer-container", 13)(21, "mat-drawer", 14, 0)(23, "div", 15)(24, "button", 16);
       \u0275\u0275listener("click", function MainLayoutComponent_Template_button_click_24_listener() {
         \u0275\u0275restoreView(_r1);
-        const drawer_r2 = \u0275\u0275reference(20);
+        const drawer_r2 = \u0275\u0275reference(22);
         return \u0275\u0275resetView(drawer_r2.close());
       });
-      \u0275\u0275text(25, "Planner");
+      \u0275\u0275text(25, "Temples");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(26, "button", 16);
+      \u0275\u0275elementStart(26, "button", 17);
       \u0275\u0275listener("click", function MainLayoutComponent_Template_button_click_26_listener() {
         \u0275\u0275restoreView(_r1);
-        const drawer_r2 = \u0275\u0275reference(20);
+        const drawer_r2 = \u0275\u0275reference(22);
         return \u0275\u0275resetView(drawer_r2.close());
       });
-      \u0275\u0275text(27, "Community");
+      \u0275\u0275text(27, "Planner");
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(28, "button", 18);
+      \u0275\u0275listener("click", function MainLayoutComponent_Template_button_click_28_listener() {
+        \u0275\u0275restoreView(_r1);
+        const drawer_r2 = \u0275\u0275reference(22);
+        return \u0275\u0275resetView(drawer_r2.close());
+      });
+      \u0275\u0275text(29, "Community");
       \u0275\u0275elementEnd()()();
-      \u0275\u0275elementStart(28, "mat-drawer-content", 17);
-      \u0275\u0275element(29, "router-outlet");
-      \u0275\u0275elementStart(30, "footer", 18)(31, "div", 19);
-      \u0275\u0275text(32, " \xA9 2024 Dharm Yatra. All rights reserved. ");
+      \u0275\u0275elementStart(30, "mat-drawer-content", 19);
+      \u0275\u0275element(31, "router-outlet");
+      \u0275\u0275elementStart(32, "footer", 20)(33, "div", 21);
+      \u0275\u0275text(34, " \xA9 2024 Dharm Yatra. All rights reserved. ");
       \u0275\u0275elementEnd()()()()();
     }
   }, dependencies: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, MatToolbarModule, MatToolbar, MatButtonModule, MatButton, MatIconButton, MatIconModule, MatIcon, MatSidenavModule, MatDrawer, MatDrawerContainer, MatDrawerContent], encapsulation: 2 });
@@ -34409,7 +34411,7 @@ var MainLayoutComponent = class _MainLayoutComponent {
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MainLayoutComponent, [{
     type: Component,
-    args: [{ selector: "app-main-layout", standalone: true, imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule], template: '<div class="flex flex-col min-h-screen">\n    <mat-toolbar color="primary" class="!bg-indigo-900 !text-white shadow-md z-50 relative">\n        <button mat-icon-button (click)="drawer.toggle()" class="md:hidden">\n            <mat-icon>menu</mat-icon>\n        </button>\n        <span class="font-bold text-xl tracking-tight ml-2">Dharm Yatra</span>\n        <span class="flex-1"></span>\n        <div class="hidden md:flex gap-2">\n            <button mat-button routerLink="/temples" routerLinkActive="bg-white/10">Temples</button>\n            <button mat-button routerLink="/planner" routerLinkActive="bg-white/10">Planner</button>\n            <button mat-button routerLink="/community" routerLinkActive="bg-white/10">Community</button>\n        </div>\n        <button mat-icon-button class="ml-2">\n            <mat-icon>account_circle</mat-icon>\n        </button>\n    </mat-toolbar>\n\n    <mat-drawer-container class="flex-1" autosize>\n        <mat-drawer #drawer mode="over">\n            <div class="flex flex-col w-60 p-4 gap-2">\n                <button mat-button routerLink="/temples" (click)="drawer.close()">Temples</button>\n                <button mat-button routerLink="/planner" (click)="drawer.close()">Planner</button>\n                <button mat-button routerLink="/community" (click)="drawer.close()">Community</button>\n            </div>\n        </mat-drawer>\n        <mat-drawer-content class="bg-gray-50 flex flex-col">\n            <router-outlet></router-outlet>\n            <footer class="bg-gray-800 text-white p-6 mt-auto">\n                <div class="container mx-auto text-center text-sm opacity-70">\n                    &copy; 2024 Dharm Yatra. All rights reserved.\n                </div>\n            </footer>\n        </mat-drawer-content>\n    </mat-drawer-container>\n</div>' }]
+    args: [{ selector: "app-main-layout", standalone: true, imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule], template: '<div class="flex flex-col min-h-screen">\n    <mat-toolbar color="primary" class="!bg-indigo-900 !text-white shadow-md z-50 relative">\n        <button mat-icon-button (click)="drawer.toggle()" class="md:hidden">\n            <mat-icon>menu</mat-icon>\n        </button>\n        <div class="flex items-center gap-3 ml-2">\n            <img src="logo-1.png" alt="Dharm Yatra Logo" class="h-10 w-10 object-contain">\n            <span class="font-bold text-xl tracking-tight">Dharm Yatra</span>\n        </div>\n        <span class="flex-1"></span>\n        <div class="hidden md:flex gap-2">\n            <button mat-button routerLink="/temples" routerLinkActive="bg-white/10">Temples</button>\n            <button mat-button routerLink="/planner" routerLinkActive="bg-white/10">Planner</button>\n            <button mat-button routerLink="/community" routerLinkActive="bg-white/10">Community</button>\n        </div>\n        <button mat-icon-button class="ml-2">\n            <mat-icon>account_circle</mat-icon>\n        </button>\n    </mat-toolbar>\n\n    <mat-drawer-container class="flex-1" autosize>\n        <mat-drawer #drawer mode="over">\n            <div class="flex flex-col w-60 p-4 gap-2">\n                <button mat-button routerLink="/temples" (click)="drawer.close()">Temples</button>\n                <button mat-button routerLink="/planner" (click)="drawer.close()">Planner</button>\n                <button mat-button routerLink="/community" (click)="drawer.close()">Community</button>\n            </div>\n        </mat-drawer>\n        <mat-drawer-content class="bg-gray-50 flex flex-col">\n            <router-outlet></router-outlet>\n            <footer class="bg-gray-800 text-white p-6 mt-auto">\n                <div class="container mx-auto text-center text-sm opacity-70">\n                    &copy; 2024 Dharm Yatra. All rights reserved.\n                </div>\n            </footer>\n        </mat-drawer-content>\n    </mat-drawer-container>\n</div>' }]
   }], null, null);
 })();
 (() => {
