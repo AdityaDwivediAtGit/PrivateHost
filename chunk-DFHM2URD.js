@@ -3655,7 +3655,7 @@ var MOCK_DB = {
   temples: [
     {
       "id": TEMPLE_IDS.VAISHNO_DEVI,
-      "name": "DEMO Vaishno Devi",
+      "name": "DEMO Vaishno Devi (Mock data)",
       "defaultDuration": 2,
       "deity": "Mata Vaishno Devi (Goddess Durga)",
       "region": "Jammu & Kashmir",
@@ -3851,4 +3851,4 @@ export {
   MatButton,
   MatButtonModule
 };
-//# sourceMappingURL=chunk-GZLLNZZG.js.map
+//# sourceMappingURL=chunk-DFHM2URD.js.map

@@ -6,7 +6,7 @@ import {
   MatButtonModule,
   TEMPLE_IDS,
   _getAnimationsState
-} from "./chunk-GZLLNZZG.js";
+} from "./chunk-DFHM2URD.js";
 import {
   selectAllTemples,
   selectTempleLoading
@@ -550,4 +550,4 @@ var templeRoutes = [
 export {
   templeRoutes
 };
-//# sourceMappingURL=chunk-6OESHRNL.js.map
+//# sourceMappingURL=chunk-CRX3IP2Q.js.map

@@ -100,7 +100,7 @@ import {
   createBookingSuccess,
   resetBookingDraft,
   updateBookingDraft
-} from "./chunk-OQGXGAI5.js";
+} from "./chunk-5IPXYQAV.js";
 import {
   NG_VALUE_ACCESSOR
 } from "./chunk-QG35UWXQ.js";
@@ -115,7 +115,7 @@ import {
   _animationsDisabled,
   coerceBooleanProperty,
   hasModifierKey
-} from "./chunk-GZLLNZZG.js";
+} from "./chunk-DFHM2URD.js";
 import {
   loadTemples,
   loadTemplesFailure,
@@ -1969,11 +1969,11 @@ var UserEffects = class _UserEffects {
 var routes = [
   {
     path: "temples",
-    loadChildren: () => import("./chunk-6OESHRNL.js").then((m) => m.templeRoutes)
+    loadChildren: () => import("./chunk-CRX3IP2Q.js").then((m) => m.templeRoutes)
   },
   {
     path: "book",
-    loadChildren: () => import("./chunk-OWWQJ3FR.js").then((m) => m.bookingRoutes)
+    loadChildren: () => import("./chunk-4MS6ZRT2.js").then((m) => m.bookingRoutes)
   },
   {
     path: "planner",
