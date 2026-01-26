@@ -112,7 +112,7 @@ var NotificationService = class _NotificationService {
 // src/environments/environment.ts
 var environment = {
   production: false,
-  apiUrl: "http://localhost:5003",
+  apiUrl: "https://catalog-api-pndj.onrender.com",
   useMockData: false
 };
 
@@ -195,4 +195,4 @@ export {
   NotificationService,
   ApiService
 };
-//# sourceMappingURL=chunk-M5WEUI4U.js.map
+//# sourceMappingURL=chunk-OQGXGAI5.js.map

@@ -100,7 +100,7 @@ import {
   createBookingSuccess,
   resetBookingDraft,
   updateBookingDraft
-} from "./chunk-M5WEUI4U.js";
+} from "./chunk-OQGXGAI5.js";
 import {
   NG_VALUE_ACCESSOR
 } from "./chunk-QG35UWXQ.js";
@@ -1973,7 +1973,7 @@ var routes = [
   },
   {
     path: "book",
-    loadChildren: () => import("./chunk-RVGRN3RM.js").then((m) => m.bookingRoutes)
+    loadChildren: () => import("./chunk-OWWQJ3FR.js").then((m) => m.bookingRoutes)
   },
   {
     path: "planner",
